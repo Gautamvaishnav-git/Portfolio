@@ -16,8 +16,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-progressbar-on-scroll": "^2.0.0",
     "react-responsive-carousel": "^3.2.23",
-    "react-router-dom": "^6.6.0"
+    "react-router-dom": "^6.6.0",
+    "react-router-hash-link": "^2.4.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

@@ -1,14 +1,16 @@
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+}
 ::-webkit-scrollbar {
   width: 5px;
 }
 
-::-webkit-scrollbar-thumb{
-    background: currentColor;
-    border-radius: 5px;
-    filter: invert(1);
+::-webkit-scrollbar-thumb {
+  background: currentColor;
+  border-radius: 5px;
 }
 
-::-webkit-scrollbar-track{
-    background: cadetblue;
-    /* filter: invert(1); */
+::-webkit-scrollbar-track {
+  background: #9f7aea;
 }

@@ -10,12 +10,13 @@ const ColorModeSwitcher = (props) => {
     <>
       <IconButton
         variant="ghost"
-        colorScheme={"blue"}
-        // bgColor="cyan.900"
+        colorScheme={"purple"}
+        color="current"
         pos="fixed"
         p="0"
         w="10"
         h="10"
+        fontSize={"1.2rem"}
         zIndex={"overlay"}
         borderRadius="full"
         right="4"
