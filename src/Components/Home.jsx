@@ -88,6 +88,7 @@ const Home = () => {
           lineHeight="1.3"
           gap={["5px", "1rem"]}
           px={["2", "0"]}
+          textAlign={["center", "left"]}
         >
           <Text fontSize={["xl", "2xl"]} fontWeight="medium" color="purple.400">
             Hi There, This is
@@ -108,10 +109,10 @@ const Home = () => {
           </Text>
           <Button
             lineHeight="2rem"
-            alignSelf="flex-start"
+            alignSelf={["center","flex-start"]}
             variant="outline"
             borderColor="purple.400"
-            color="current"
+            colorScheme="purple"
             borderRadius="0"
             textTransform="capitalize"
           >

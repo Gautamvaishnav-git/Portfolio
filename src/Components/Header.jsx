@@ -36,10 +36,10 @@ const Header = () => {
       <Box
         w="100%"
         h="fit-content"
-        display={"flex"}
+        display="flex"
         alignItems="center"
-        justifyContent={"center"}
-        gap={"4"}
+        justifyContent="center"
+        gap="4"
         bg="purple.500"
         backdropFilter="blur(5px)"
         color="white"
@@ -50,16 +50,16 @@ const Header = () => {
           <MobileMenue />
         </HStack>
         <Link w="fit-content" px="4" py="2">
-          <Image src={logo} w={["8", "8"]} fill={"white"} />
+          <Image src={logo} w={["8", "8"]} fill="white" />
         </Link>
-        <HStack w="full" justifyContent={"center"} display={["none", "flex"]}>
-          <Link px={["0", "2"]} href={"#"} className="links__border">
+        <HStack w="full" justifyContent="center" display={["none", "flex"]}>
+          <Link px={["0", "2"]} href="#" className="links__border">
             Home
           </Link>
-          <Link px={["0", "2"]} href={"/#about"} className="links__border">
+          <Link px={["0", "2"]} href="/#about" className="links__border">
             About
           </Link>
-          <Link px={["0", "2"]} href={"/#contact"} className="links__border">
+          <Link px={["0", "2"]} href="/#contact" className="links__border">
             Contact
           </Link>
         </HStack>
@@ -103,13 +103,14 @@ const MobileMenue = () => {
             </VStack>
           </DrawerBody>
           <DrawerFooter>
-            <HStack w="full">
+            <HStack w="full" position="fixed" bottom="0" left="10">
               {mediaLinks.map((media) => (
                 <Link
                   href={media.attribs.href}
                   _hover={media.attribs._hover}
                   py="1.5"
                   key={media.key}
+                  targe="_blank"
                 >
                   {media.Icon}
                 </Link>

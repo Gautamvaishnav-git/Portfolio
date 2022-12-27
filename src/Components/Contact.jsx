@@ -18,7 +18,7 @@ const Contact = () => {
       >
         <Stack
           id="contact"
-          h="100vh"
+          h={["auto", "100vh"]}
           maxW={"container.xl"}
           mx="auto"
           display={"flex"}
@@ -29,17 +29,13 @@ const Contact = () => {
         >
           <VStack
             justifyContent="center"
-            alignItems={["flex-start", "center"]}
+            alignItems="center"
             h="100%"
             px={["2", "auto"]}
             gap={["2", "4"]}
           >
             <Heading>Get in Touch.</Heading>
-            <Text
-              maxW={["100%", "70%"]}
-              textAlign={["left", "center"]}
-              color={"gray.500"}
-            >
+            <Text maxW={["100%", "70%"]} textAlign="center" color={"gray.500"}>
               Currently I'm looking for a opportunitie, Give me a chance to help
               you to grow your company by developing fast websites with better
               user experience. If you have any query you can contact me without
