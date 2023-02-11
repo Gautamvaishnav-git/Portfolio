@@ -3,7 +3,6 @@ import {
   HStack,
   VStack,
   Link,
-  Image,
   Drawer,
   DrawerBody,
   DrawerCloseButton,
@@ -15,53 +14,63 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import logo from "../assets/Logo.svg";
-import MediaLinks from "./MediaLinks";
+import MediaLinks from "./Media";
 import ProgressBar from "react-progressbar-on-scroll";
 
 const Header = () => {
-  const [navClass, setNavClass] = useState("nav__hide");
-  document.body.onwheel = (event) => {
-    if (event.deltaY === -166.66665649414062) {
-      setNavClass("nav__show");
-    } else {
-      setNavClass("nav__hide");
-    }
-  };
+  const [mediaLinks, setMediaLinks] = useState(MediaLinks);
   return (
     <>
       <Box zIndex="overlay" position="fixed">
         <ProgressBar color="#9d52ff" gradient={true} gradientColor="#ff1aae" />
       </Box>
       <Box
-        w="100%"
-        h="fit-content"
+        w="full"
         display="flex"
         alignItems="center"
         justifyContent="center"
         gap="4"
-        bg="purple.500"
+        bg="brand.900"
         backdropFilter="blur(5px)"
         color="white"
         zIndex="1000"
-        className={navClass}
+        top="0"
+        pos="sticky"
+        h={["10", "auto"]}
+        px={["0", "10"]}
       >
         <HStack display={["flex", "none"]} position="fixed" left="4">
-          <MobileMenue />
+          <MobileMenu mediaLinks={mediaLinks} />
         </HStack>
-        <Link w="fit-content" px="4" py="2">
-          <Image src={logo} w={["8", "8"]} fill="white" />
-        </Link>
-        <HStack w="full" justifyContent="center" display={["none", "flex"]}>
-          <Link px={["0", "2"]} href="#" className="links__border">
-            Home
-          </Link>
-          <Link px={["0", "2"]} href="/#about" className="links__border">
-            About
-          </Link>
-          <Link px={["0", "2"]} href="/#contact" className="links__border">
-            Contact
-          </Link>
+        <HStack
+          w="full"
+          display={["none", "flex"]}
+          justifyContent="space-between"
+          p="5"
+        >
+          <Box display="flex" gap="8">
+            <Link href="#" className="links__border">
+              Home
+            </Link>
+            <Link href="/#about" className="links__border">
+              About
+            </Link>
+            <Link href="/#myprojects" className="links__border">
+              Projects
+            </Link>
+            <Link href="/#contact" className="links__border">
+              Contact
+            </Link>
+          </Box>
+          <Box display="flex" gap="4">
+            {mediaLinks.map((media) => {
+              return (
+                <Link {...media.attribs} isExternal py="1.5" key={media.key}>
+                  {media.Icon}
+                </Link>
+              );
+            })}
+          </Box>
         </HStack>
       </Box>
     </>
@@ -70,9 +79,8 @@ const Header = () => {
 
 export default Header;
 
-const MobileMenue = () => {
+const MobileMenu = ({ mediaLinks }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [mediaLinks, setMediaLinks] = useState(MediaLinks);
   return (
     <>
       <IconButton
@@ -89,7 +97,7 @@ const MobileMenue = () => {
         <DrawerOverlay />
         <DrawerContent h="100vh">
           <DrawerCloseButton borderRadius="full" />
-          <DrawerBody>
+          <DrawerBody bg="brand.dark">
             <VStack pt="10" alignItems="flex-start">
               <Link href="#" onClick={onClose} className="links__border">
                 Home
@@ -102,8 +110,12 @@ const MobileMenue = () => {
               </Link>
             </VStack>
           </DrawerBody>
-          <DrawerFooter>
-            <HStack w="full" position="fixed" bottom="0" left="10">
+          <DrawerFooter bg="brand.dark">
+            <HStack
+              w="full"
+              gap="2"
+              justifyContent={["center", "flex-start"]}
+            >
               {mediaLinks.map((media) => (
                 <Link
                   href={media.attribs.href}

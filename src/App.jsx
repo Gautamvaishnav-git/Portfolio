@@ -7,14 +7,12 @@ import "./App.css";
 const App = () => {
   return (
     <>
-      <ChakraProvider>
         <Router>
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
         </Router>
-      </ChakraProvider>
     </>
   );
 };

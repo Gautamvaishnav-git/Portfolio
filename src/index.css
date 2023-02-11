@@ -1,16 +1,19 @@
 * {
   scroll-behavior: smooth;
   margin: 0;
+  scroll-padding: 8rem;
 }
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: currentColor;
   border-radius: 5px;
+  border: 4px solid #181321;
 }
 
-::-webkit-scrollbar-track {
-  background: #9f7aea;
+*::selection {
+  background: #6a3cb975;
+  color: white;
 }

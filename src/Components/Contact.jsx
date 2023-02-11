@@ -2,6 +2,7 @@ import {
   Button,
   Container,
   Heading,
+  Link,
   Stack,
   Text,
   VStack,
@@ -36,19 +37,22 @@ const Contact = () => {
           >
             <Heading>Get in Touch.</Heading>
             <Text maxW={["100%", "70%"]} textAlign="center" color={"gray.500"}>
-              Currently I'm looking for a opportunitie, Give me a chance to help
-              you to grow your company by developing fast websites with better
-              user experience. If you have any query you can contact me without
-              and hesitation.
+              Currently I'm looking for a opportunities, Give me a chance to
+              help you to grow your company by developing fast websites with
+              better user experience. If you have any query you can contact me
+              without and hesitation.
             </Text>
-            <Button
+            <Link
               variant={"outline"}
-              color="current"
-              colorScheme={"purple"}
-              borderRadius="0"
+              bg="brand.purple"
+              py="2"
+              px="4"
+              borderRadius="8"
+              _hover={{ textDecor: "none", bg: "brand.purple800" }}
+              href="mailto:gauravvaishnav8690@gmail.com"
             >
-              <a href="mailto:gauravvaishnav8690@gmail.com">Let's Talk</a>
-            </Button>
+              Let's Talk
+            </Link>
           </VStack>
         </Stack>
       </motion.div>
