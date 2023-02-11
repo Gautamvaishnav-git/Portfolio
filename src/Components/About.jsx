@@ -70,10 +70,10 @@ const About = () => {
             >
               <Text>
                 Hello! My name is Gautam Vaishnav. I enjoy things that are
-                created on the web. My interest is in web development. started
-                web development in the last 2 years. I started with HTML, CSS
-                and Javascript. After some time, I decided to learn ReactJS and
-                create some projects with it.
+                created by me on the web. My interest is in web development.
+                started web development in the last 2 years. I started with
+                HTML, CSS and Javascript. After some time, I decided to learn
+                ReactJS and create some projects with it.
               </Text>
               <Text>
                 This year I learned NodeJs, Express, and MongoDB, and I am
