@@ -88,7 +88,7 @@ const Home = () => {
             isExternal
             _hover={{ bg: "brand.purple800" }}
           >
-            Download Resume
+            Resume
           </Link>
         </VStack>
       </Stack>
