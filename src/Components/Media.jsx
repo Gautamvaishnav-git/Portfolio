@@ -8,6 +8,7 @@ import nextnews from "../assets/nextnews.webp";
 import reduxcart from "../assets/reduxcart.webp";
 import yourjavateacher from "../assets/yourjavateacher.webp";
 import cryptoapp from "../assets/cryptoapp.webp";
+import Imovie from "../assets/Imovie.webp";
 
 const MediaLinks = [
   {
@@ -107,7 +108,7 @@ export const ProjectsData = [
 {
     projectName: "Imovie",
     projectNo: 4,
-    image: reduxcart,
+    image: Imovie,
     description: `Imovie is a single page application. Made with ReactJs and typescript and TMDB api. In this project I learn how to create a type safe application using typescript also learned how to read an api documentation.`,
     technologies: ["Typescript", "Tailwind", "TMDB", "React"],
     projectLinks: [
