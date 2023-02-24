@@ -104,6 +104,24 @@ export const ProjectsData = [
     ],
     direction: ["column", "row-reverse"],
   },
+{
+    projectName: "Imovie",
+    projectNo: 4,
+    image: reduxcart,
+    description: `Imovie is a single page application. Made with ReactJs and typescript and TMDB api. In this project I learn how to create a type safe application using typescript also learned how to read an api documentation.`,
+    technologies: ["Typescript", "Tailwind", "TMDB", "React"],
+    projectLinks: [
+      {
+        icon: <AiFillGithub size="100%" />,
+        link: "https://github.com/Gautamvaishnav-git/imovie",
+      },
+      {
+        icon: <AiOutlineLink size="100%" />,
+        link: "https://imovie-bygautam.vercel.app/",
+      },
+    ],
+    direction: ["column", "row"],
+  },
 ];
 
 export default MediaLinks;
