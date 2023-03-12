@@ -37,10 +37,9 @@ const Contact = () => {
           >
             <Heading>Get in Touch.</Heading>
             <Text maxW={["100%", "70%"]} textAlign="center" color={"gray.500"}>
-              Currently I'm looking for a opportunities, Give me a chance to
-              help you to grow your company by developing fast websites with
-              better user experience. If you have any query you can contact me
-              without and hesitation.
+              Currently I'm looking for a new opportunity. Give me a chance to
+              help you to grow your company by developing fast web apps and backend. If you have any query you can contact me
+              without any hesitation.
             </Text>
             <Link
               variant={"outline"}
