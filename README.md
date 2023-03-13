@@ -22,6 +22,7 @@ If you have any query you can ping me on [LinkedIn](https://www.linkedin.com/in/
 - Nodejs
 - Mongodb (Database)
 - Express (Node Framework)
+- Typescript
 
 
 ## 📷 ScreenShots 
