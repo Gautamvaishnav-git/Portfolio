@@ -87,7 +87,8 @@
 
 @media screen and (max-width: 768px) {
   .productImage,
-  .productInfo {
+  .productInfo,
+  .gautam_img_box {
     flex-grow: 1;
   }
 }

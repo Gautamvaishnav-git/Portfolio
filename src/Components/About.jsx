@@ -59,8 +59,7 @@ const About = () => {
               whileInView="view"
               variants={variant}
               transition={{ ease: "linear", duration: 0.5, delay: 1 }}
-              w={["full", "70%"]}
-              flexGrow="1"
+              w={["full", "65%"]}
               experimental_spaceY={["0", "6"]}
               lineHeight="170%"
               fontSize="md"
@@ -125,7 +124,6 @@ const About = () => {
               }}
               h="full"
               w={["90%", "30%"]}
-              flexGrow="1"
               overflow={["hidden", "clip"]}
               alignSelf="center"
               bg="lightblue"
