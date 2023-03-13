@@ -12,13 +12,17 @@ import {
   DrawerOverlay,
   DrawerFooter,
 } from "@chakra-ui/react";
-import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import MediaLinks from "./Media";
 import ProgressBar from "react-progressbar-on-scroll";
+import { useState } from "react";
 
 const Header = () => {
-  const [mediaLinks, setMediaLinks] = useState(MediaLinks);
+  const [position, setPosition] = useState("static");
+  window.addEventListener("wheel", (e) => {
+    if (e.deltaY < 0) setPosition("sticky");
+    else setPosition("static");
+  });
   return (
     <>
       <Box zIndex="overlay" position="fixed">
@@ -35,12 +39,12 @@ const Header = () => {
         color="white"
         zIndex="1000"
         top="0"
-        pos="sticky"
+        className={position === "static" ? "hide" : "show"}
         h={["10", "auto"]}
         px={["0", "10"]}
       >
         <HStack display={["flex", "none"]} position="fixed" left="4">
-          <MobileMenu mediaLinks={mediaLinks} />
+          <MobileMenu mediaLinks={MediaLinks} />
         </HStack>
         <HStack
           w="full"
@@ -63,7 +67,7 @@ const Header = () => {
             </Link>
           </Box>
           <Box display="flex" gap="4">
-            {mediaLinks.map((media) => {
+            {MediaLinks.map((media) => {
               return (
                 <Link {...media.attribs} isExternal py="1.5" key={media.key}>
                   {media.Icon}
@@ -111,11 +115,7 @@ const MobileMenu = ({ mediaLinks }) => {
             </VStack>
           </DrawerBody>
           <DrawerFooter bg="brand.dark">
-            <HStack
-              w="full"
-              gap="2"
-              justifyContent={["center", "flex-start"]}
-            >
+            <HStack w="full" gap="2" justifyContent={["center", "flex-start"]}>
               {mediaLinks.map((media) => (
                 <Link
                   href={media.attribs.href}

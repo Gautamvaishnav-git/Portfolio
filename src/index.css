@@ -17,3 +17,17 @@
   background: #6a3cb975;
   color: white;
 }
+
+.show {
+  animation: navHideShow 0.5s ease alternate;
+  position: sticky;
+}
+
+@keyframes navHideShow {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0px;
+  }
+}

@@ -32,14 +32,13 @@ const About = () => {
         <VStack
           id="about"
           w="full"
-          maxH={["auto", "100vh"]}
           maxW="container.xl"
           mx="auto"
           px={["0", "16"]}
           py={["0", "16"]}
         >
           <Heading
-            pb={["1", "10"]}
+            pb={10}
             letterSpacing="wide"
             fontWeight="normal"
             fontStyle="italic"
@@ -52,15 +51,16 @@ const About = () => {
             alignItems="flex-start"
             flexDir={["column-reverse", "row"]}
             gap={["6", "2"]}
+            flexWrap="wrap"
           >
             <Box
-              h="full"
               as={motion.div}
               initial="hidden"
               whileInView="view"
               variants={variant}
               transition={{ ease: "linear", duration: 0.5, delay: 1 }}
               w={["full", "70%"]}
+              flexGrow="1"
               experimental_spaceY={["0", "6"]}
               lineHeight="170%"
               fontSize="md"
@@ -84,6 +84,7 @@ const About = () => {
                 I am passionate about learning the latest technologies.
               </Text>
 
+              <Heading fontSize="xl">Languages & Frameworks</Heading>
               <HStack gap="16">
                 <List>
                   <ListItem>
@@ -124,6 +125,7 @@ const About = () => {
               }}
               h="full"
               w={["90%", "30%"]}
+              flexGrow="1"
               overflow={["hidden", "clip"]}
               alignSelf="center"
               bg="lightblue"

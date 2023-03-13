@@ -15,7 +15,6 @@ const Home = () => {
         maxW="container.xl"
         mx="auto"
         direction={["column-reverse", "row"]}
-        maxH={["auto", "100vh"]}
         px={["0", "10"]}
         py="8"
       >
@@ -50,10 +49,10 @@ const Home = () => {
           alignItems="stretch"
           lineHeight="1.3"
           gap={["5px", "1rem"]}
-          px={["2", "0"]}
+          px={["2", "2"]}
         >
           <Text fontSize="2xl" fontFamily={"mono"} color="gray.300">
-            Hi, This is
+            Hi there, This is
           </Text>
           <Heading
             fontSize={["3xl", "6xl"]}
@@ -88,7 +87,7 @@ const Home = () => {
             isExternal
             _hover={{ bg: "brand.purple800" }}
           >
-            Resume
+            Go To Resume
           </Link>
         </VStack>
       </Stack>

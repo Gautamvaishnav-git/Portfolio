@@ -25,8 +25,8 @@ const Projects = () => {
             my projects
           </Heading>
           <VStack gap={["16", "48"]}>
-            {ProjectsData.map((project, index) => (
-              <ProjectCard project={project} key={index} />
+            {ProjectsData.map((project) => (
+              <ProjectCard project={project} key={project.id} />
             ))}
           </VStack>
         </VStack>

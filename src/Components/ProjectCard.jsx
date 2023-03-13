@@ -1,12 +1,4 @@
-import {
-  Box,
-  HStack,
-  IconButton,
-  Image,
-  Link,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, HStack, Image, Link, Text, VStack } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 const ProjectCard = (props) => {
@@ -34,16 +26,16 @@ const ProjectCard = (props) => {
         variants={variant}
       >
         <HStack
-          maxH={["auto", "100vh"]}
           w="full"
           justifyContent="space-between"
           alignItems="flex-start"
           flexDirection={direction}
           pos="relative"
+          flexWrap={"wrap"}
           gap="4"
         >
           <Box
-            w={["full", "60%"]}
+            w={["full", "55%"]}
             h="fit-content"
             bg="purple.200"
             borderRadius="10"
@@ -53,10 +45,18 @@ const ProjectCard = (props) => {
             variants={variant}
             transition={{ delay: 0.2 }}
             viewport={{ once: true }}
+            className="productImage"
           >
-            <Link href={projectLinks[0].link} isExternal w="full">
+            <Link
+              href={
+                projectLinks[1] ? projectLinks[1].link : projectLinks[0].link
+              }
+              isExternal
+              w="full"
+            >
               <Image
                 src={image}
+                loading="lazy"
                 w="100%"
                 h="full"
                 borderRadius="8"
@@ -82,6 +82,7 @@ const ProjectCard = (props) => {
             whileInView="view"
             variants={variant}
             viewport={{ once: true }}
+            className="productInfo"
           >
             <Text
               w="full"
@@ -121,18 +122,19 @@ const ProjectCard = (props) => {
             >
               {description}
             </Text>
-            <HStack gap="2" flexWrap="wrap" w="full">
-              {technologies.map((technology) => (
-                <Text color="gray.400" pe="2">
+            <HStack flexWrap="wrap" w="full">
+              {technologies.map((technology, index) => (
+                <Text color="gray.400" display="inline" key={index}>
                   {technology}
                 </Text>
               ))}
             </HStack>
             <HStack gap="1">
-              {projectLinks.map(({ icon, link }) => {
+              {projectLinks.map(({ icon, link }, index) => {
                 return (
                   <Link
                     href={link}
+                    key={index}
                     w="6"
                     h="6"
                     color="white"

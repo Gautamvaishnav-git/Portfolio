@@ -43,6 +43,7 @@ export const ProjectsData = [
   {
     projectName: "next news",
     projectNo: 1,
+    id: "$nextnews1",
     image: nextnews,
     description: `A single page News React Application.
     During the development of this application I learn how to create reusable react components, nested routing, how to work with Api (in react) and much more. `,
@@ -58,6 +59,7 @@ export const ProjectsData = [
   {
     projectName: "crypto application",
     projectNo: 2,
+    id: "$crypto2",
     image: cryptoapp,
     description: `Crypto React Application created with Chakra Ui and Coingecko Api. In this project I learn how to use Chakra Ui, worked with axios, used  react icons etc. `,
     technologies: ["Chakra Ui", "ChartJs", "Axios", "React Icon Library"],
@@ -76,6 +78,7 @@ export const ProjectsData = [
   {
     projectName: "yourjavateacher",
     projectNo: 3,
+    id: "$yourjavateacher3",
     image: yourjavateacher,
     description: `Video Application for youtube channel @YourJavaTeacher. He is teaching about java and related technologies to Java. Created with chakraUi and ReactJs. videos by lectures feature and etc.`,
     technologies: ["react js", "Chakra Ui", "React Router"],
@@ -90,6 +93,7 @@ export const ProjectsData = [
   {
     projectName: "redux cart",
     projectNo: 4,
+    id: "$redux4",
     image: reduxcart,
     description: `Crypto React Application created with Chakra Ui and Coingecko Api. In this project I learn how to use Chakra Ui, worked with axios, used  react icons etc. `,
     technologies: ["Sass", "@Redux-toolkit", "React-hot-toast", "React Redux"],
@@ -107,7 +111,8 @@ export const ProjectsData = [
   },
 {
     projectName: "Imovie",
-    projectNo: 4,
+    projectNo: 5,
+    id: "$Imovie5",
     image: Imovie,
     description: `Imovie is a single page application. Made with ReactJs and typescript and TMDB api. In this project I learn how to create a type safe application using typescript also learned how to read an api documentation.`,
     technologies: ["Typescript", "Tailwind", "TMDB", "React"],

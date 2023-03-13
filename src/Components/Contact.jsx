@@ -19,7 +19,6 @@ const Contact = () => {
       >
         <Stack
           id="contact"
-          h={["auto", "100vh"]}
           maxW={"container.xl"}
           mx="auto"
           display={"flex"}

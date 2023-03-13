@@ -21,11 +21,11 @@
 .links__border::after {
   content: "";
   position: absolute;
-  border-bottom: 1px solid currentColor;
+  border-bottom: 2px solid currentColor;
   width: 0%;
   height: 100%;
-  bottom: 0%;
-  left: 0%;
+  bottom: -2px;
+  left: 0;
   transition: all 0.2s ease;
 }
 
@@ -67,8 +67,9 @@
   top: 1rem;
   left: 1rem;
   mix-blend-mode: normal;
-  transition: all 0.2s ease-in;
+  transition: all 0.3s ease-in;
   scale: 1.03;
+  filter: saturate(100%);
 }
 
 .gautam_img_box {
@@ -81,5 +82,12 @@
   }
   to {
     transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .productImage,
+  .productInfo {
+    flex-grow: 1;
   }
 }
