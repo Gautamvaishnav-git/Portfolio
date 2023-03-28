@@ -93,8 +93,8 @@ export const ProjectsData = [
   },
   {
     projectName: "Shorty",
-    projectNo: 6,
-    id: "$Imovie6",
+    projectNo: 4,
+    id: "$Imovie4",
     image: Shorty,
     description: `Shorty is short url services. Here You can generate short urls for long urls. You can login to your dashboard or can see the list of the short urls that you generate.`,
     technologies: ["NodeJs", "Express", "MongoDB", "EJS"],
@@ -108,8 +108,8 @@ export const ProjectsData = [
   },
   {
     projectName: "redux cart",
-    projectNo: 4,
-    id: "$redux4",
+    projectNo: 5,
+    id: "$redux5",
     image: reduxcart,
     description: `Crypto React Application created with Chakra Ui and Coingecko Api. In this project I learn how to use Chakra Ui, worked with axios, used  react icons etc. `,
     technologies: ["Sass", "@Redux-toolkit", "React-hot-toast", "React Redux"],
@@ -127,8 +127,8 @@ export const ProjectsData = [
   },
 {
     projectName: "Imovie",
-    projectNo: 5,
-    id: "$Imovie5",
+    projectNo: 6,
+    id: "$Imovie6",
     image: Imovie,
     description: `Imovie is a single page application. Made with ReactJs and typescript and TMDB api. In this project I learn how to create a type safe application using typescript also learned how to read an api documentation.`,
     technologies: ["Typescript", "Tailwind", "TMDB", "React"],
