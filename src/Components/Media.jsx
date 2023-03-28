@@ -91,6 +91,21 @@ export const ProjectsData = [
     direction: ["column", "row"],
   },
   {
+    projectName: "Shorty",
+    projectNo: 6,
+    id: "$Imovie6",
+    image: Imovie,
+    description: `Shorty is short url services. Here You can generate short urls for long urls. You can login to your dashboard or can see the list of the short urls that you generate.`,
+    technologies: ["NodeJs", "Express", "MongoDB", "EJS"],
+    projectLinks: [
+      {
+        icon: <AiFillGithub size="100%" />,
+        link: "https://github.com/Gautamvaishnav-git/shorty",
+      },
+    ],
+    direction: ["column", "row-reverse"],
+  },
+  {
     projectName: "redux cart",
     projectNo: 4,
     id: "$redux4",
@@ -107,7 +122,7 @@ export const ProjectsData = [
         link: "https://redux-cart-bygautam.netlify.app/",
       },
     ],
-    direction: ["column", "row-reverse"],
+    direction: ["column", "row"],
   },
 {
     projectName: "Imovie",
@@ -129,5 +144,6 @@ export const ProjectsData = [
     direction: ["column", "row"],
   },
 ];
+
 
 export default MediaLinks;
