@@ -9,6 +9,7 @@ import reduxcart from "../assets/reduxcart.webp";
 import yourjavateacher from "../assets/yourjavateacher.webp";
 import cryptoapp from "../assets/cryptoapp.webp";
 import Imovie from "../assets/Imovie.webp";
+import Shorty from "../assets/shorty.png";
 
 const MediaLinks = [
   {
@@ -94,7 +95,7 @@ export const ProjectsData = [
     projectName: "Shorty",
     projectNo: 6,
     id: "$Imovie6",
-    image: Imovie,
+    image: Shorty,
     description: `Shorty is short url services. Here You can generate short urls for long urls. You can login to your dashboard or can see the list of the short urls that you generate.`,
     technologies: ["NodeJs", "Express", "MongoDB", "EJS"],
     projectLinks: [
