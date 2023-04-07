@@ -2,7 +2,6 @@ import {
   Box,
   HStack,
   VStack,
-  Link,
   Drawer,
   DrawerBody,
   DrawerCloseButton,
@@ -16,6 +15,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import MediaLinks from "./Media";
 import ProgressBar from "react-progressbar-on-scroll";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [position, setPosition] = useState("static");
@@ -53,17 +53,20 @@ const Header = () => {
           p="5"
         >
           <Box display="flex" gap="8">
-            <Link href="#" className="links__border">
+            <Link to="/" className="links__border">
               Home
             </Link>
-            <Link href="/#about" className="links__border">
+            <Link to="/about" className="links__border">
               About
             </Link>
-            <Link href="/#myprojects" className="links__border">
+            <Link to="/projects" className="links__border">
               Projects
             </Link>
-            <Link href="/#contact" className="links__border">
+            <Link to="/contact" className="links__border">
               Contact
+            </Link>
+            <Link to="/skills" className="links__border">
+              Tools and Technologies
             </Link>
           </Box>
           <Box display="flex" gap="4">
