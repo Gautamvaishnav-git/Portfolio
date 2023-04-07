@@ -1,0 +1,38 @@
+{
+  "frontend": [
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Dark.svg",
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NextJS-Dark.svg",
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Sass.svg",
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/TypeScript.svg",
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg",
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/TailwindCSS-Dark.svg",
+    "https://camo.githubusercontent.com/3e3f4aeb2fa0c2d44cd94344a331bed19c5b95522e8405f160b914b0aef20340/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6368616b726175692e706e67",
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Bootstrap.svg",
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/MaterialUI-Dark.svg",
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/StyledComponents.svg"
+  ],
+  "backend": [
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/TypeScript.svg",
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NodeJS-Dark.svg",
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/MongoDB.svg",
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg",
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/ExpressJS-Dark.svg",
+    "https://camo.githubusercontent.com/98ded588f83a8a21ddf05225ff59205ef7ce7d1a5e27a9490be3415bc489f1da/68747470733a2f2f696d616765732e6f70656e636f6c6c6563746976652e636f6d2f6d6f6e676f6f73652f306666343365632f6c6f676f2f3235362e706e67",
+    "https://camo.githubusercontent.com/41b0098362c14f8bd67d408cce47efdb263bf7716b82ce2a1742ee08d3c1fe49/68747470733a2f2f63646e2e69636f6e2d69636f6e732e636f6d2f69636f6e73322f323130372f504e472f3531322f66696c655f747970655f656a735f69636f6e5f3133303632362e706e67",
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg",
+    "https://rangav.gallerycdn.vsassets.io/extensions/rangav/vscode-thunder-client/2.6.0/1680547778585/Microsoft.VisualStudio.Services.Icons.Default"
+  ],
+  "toolsAndLibraries": [
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Git.svg",
+    "https://camo.githubusercontent.com/5ef323398644d0544cbf5284d118cd027594a32f1ad973d13667f169d245e382/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6c6f676f2d7469746c652e737667",
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Redux.svg",
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/VSCode-Dark.svg",
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg",
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Replit-Dark.svg",
+    "https://raw.githubusercontent.com/Pedro-Murilo/icons-for-readme/main/.github/framer-motion-icon.svg",
+    "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Vite-Dark.svg",
+    "https://user-images.githubusercontent.com/16657091/55263234-8b903300-522d-11e9-9926-44e4b3c17e0a.png",
+    "https://camo.githubusercontent.com/59c6394be4275084b4fa587b088842420dca0afd8a4011cfcd38b04c878de523/68747470733a2f2f6465627269636b65642e636f6d2f626c6f672f77702d636f6e74656e742f75706c6f6164732f323032312f30322f6669782d76756c6e732d7961726e2d6d696e2e6a7067",
+    "https://camo.githubusercontent.com/bcb56d766888dd0f2a4d74bd3ecec9b04b9dd79e5a97532ba24a8614bef12791/68747470733a2f2f706e706d2e696f2f696d672f706e706d2d6e6f2d6e616d652d776974682d6672616d652e737667"
+  ]
+}

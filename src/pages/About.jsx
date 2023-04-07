@@ -92,7 +92,7 @@ const About = () => {
                   </ListItem>
                   <ListItem>
                     <ListIcon as={AiFillCaretRight} />
-                    Typescript
+                    Typescript 
                   </ListItem>
                   <ListItem>
                     <ListIcon as={AiFillCaretRight} />

@@ -10,6 +10,7 @@ import {
   IconButton,
   DrawerOverlay,
   DrawerFooter,
+  Link as ChakraLink,
 } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
 import MediaLinks from "./Media";
@@ -72,9 +73,9 @@ const Header = () => {
           <Box display="flex" gap="4">
             {MediaLinks.map((media) => {
               return (
-                <Link {...media.attribs} isExternal py="1.5" key={media.key}>
+                <ChakraLink {...media.attribs} isExternal key={media.key}>
                   {media.Icon}
-                </Link>
+                </ChakraLink>
               );
             })}
           </Box>
