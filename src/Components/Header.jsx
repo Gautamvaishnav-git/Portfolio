@@ -107,14 +107,20 @@ const MobileMenu = ({ mediaLinks }) => {
           <DrawerCloseButton borderRadius="full" />
           <DrawerBody bg="brand.dark">
             <VStack pt="10" alignItems="flex-start">
-              <Link href="#" onClick={onClose} className="links__border">
+              <Link to="/" onClick={onClose} className="links__border">
                 Home
               </Link>
-              <Link href="#about" onClick={onClose} className="links__border">
+              <Link to="/about" onClick={onClose} className="links__border">
                 About
               </Link>
-              <Link href="#contact" onClick={onClose} className="links__border">
+              <Link to="/projects" onClick={onClose} className="links__border">
+                Projects
+              </Link>
+              <Link to="/contact" onClick={onClose} className="links__border">
                 Contact
+              </Link>
+              <Link to="/skills" onClick={onClose} className="links__border">
+                Tools and Technologies
               </Link>
             </VStack>
           </DrawerBody>
